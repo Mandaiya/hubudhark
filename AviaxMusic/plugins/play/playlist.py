@@ -9,16 +9,16 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from strings import get_command
-from ArchMusic import Carbon, YouTube, app
-from ArchMusic.utils.database import (delete_playlist, get_playlist,
+from AviaxMusic import Carbon, YouTube, app
+from AviaxMusic.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
-from ArchMusic.utils.decorators.language import language, languageCB
-from ArchMusic.utils.inline.playlist import (botplaylist_markup,
+from AviaxMusic.utils.decorators.language import language, languageCB
+from AviaxMusic.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from ArchMusic.utils.pastebin import ArchMusicbin
-from ArchMusic.utils.stream.stream import stream
+from AvaixMusic.utils.pastebin import ArchMusicbin
+from AviaxMusic.utils.stream.stream import stream
 
 # Command
 PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
