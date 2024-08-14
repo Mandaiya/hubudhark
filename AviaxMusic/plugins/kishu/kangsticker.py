@@ -17,13 +17,13 @@ from AviaxMusic import app
 from config import BOT_USERNAME
 from AviaxMusic.utils.errors import capture_err
 
-from ANNIEMUSIC.utils.files import (
+from AviaxMusic.utils.files import (
     get_document_from_file_id,
     resize_file_to_sticker_size,
     upload_document,
 )
 
-from ANNIEMUSIC.utils.stickerset import (
+from AviaxMusic.utils.stickerset import (
     add_sticker_to_set,
     create_sticker,
     create_sticker_set,
@@ -33,7 +33,7 @@ from ANNIEMUSIC.utils.stickerset import (
 # -----------
 
 MAX_STICKERS = (
-    120  # would be better if we could fetch this limit directly from telegram
+    60  # would be better if we could fetch this limit directly from telegram
 )
 SUPPORTED_TYPES = ["jpeg", "png", "webp"]
 # ------------------------------------------
@@ -65,7 +65,7 @@ async def sticker_image(_, message: Message):
 @capture_err
 async def kang(client, message: Message):
     if not message.reply_to_message:
-        return await message.reply_text("Reply to a sticker/image to kang it.")
+        return await message.reply_text("Reply to a sticker/image to kang it. Modules from Nc")
     if not message.from_user:
         return await message.reply_text(
             "You are anon admin, kang stickers in my pm."
